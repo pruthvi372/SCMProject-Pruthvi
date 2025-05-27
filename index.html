@@ -98,3 +98,103 @@
 
     .scholarship-list {
       display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fefefe;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #003366;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    .card p.description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 18px;
+      min-height: 60px;
+    }
+
+    .card ul {
+      list-style: disc inside;
+      margin-bottom: 15px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    .card ul li {
+      margin-bottom: 6px;
+    }
+
+    /* Application form styles */
+
+    form label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      color: #003366;
+      margin-top: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1.5px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+    }
+
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form select:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #0059b3;
+      box-shadow: 0 0 5px rgba(0,89,179,0.5);
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    form button {
+      margin-top: 30px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 100%;
+      max-width: 350px;
+    }
+
+    form button:hover {
+      background-color: #002a50;    
