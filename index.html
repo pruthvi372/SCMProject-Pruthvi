@@ -98,3 +98,56 @@
 
     .scholarship-list {
       display: grid;
+
+
+ 
+ /* FAQ styles */
+
+    .faq-section {
+      margin-top: 50px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: #f4f7fc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 15px 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background-color: #d9e7ff;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #003366;
+      user-select: none;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      font-size: 1rem;
+      color: #444;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px; /* enough height for content */
+    }
+
+    /* Contact section */
+
+    #contact .contact-info {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #004080;
+    }
+
+   
