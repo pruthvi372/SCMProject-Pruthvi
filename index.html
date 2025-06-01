@@ -150,4 +150,50 @@
       color: #004080;
     }
 
-   
+      #contact .contact-info a {
+      color: #002a50;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    #contact .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .container {
+        margin: 15px;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        float: none;
+        width: 100%;
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: 1px solid #004080;
+      }
+      nav a:last-child {
+        border-bottom: none;
+      }
+      form button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Scholarship Portal</h1>
+    <p>Your gateway to thousands of scholarship opportunities</p>
+  </header>
+ 
