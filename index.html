@@ -98,3 +98,102 @@
 
     .scholarship-list {
       display: grid;
+
+
+ 
+ /* FAQ styles */
+
+    .faq-section {
+      margin-top: 50px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-radius: 10px;
+      background-color: #f4f7fc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 15px 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .faq-item:hover {
+      background-color: #d9e7ff;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #003366;
+      user-select: none;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      font-size: 1rem;
+      color: #444;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px; /* enough height for content */
+    }
+
+    /* Contact section */
+
+    #contact .contact-info {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #004080;
+    }
+
+      #contact .contact-info a {
+      color: #002a50;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    #contact .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 900px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .container {
+        margin: 15px;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        float: none;
+        width: 100%;
+        padding: 12px 0;
+        text-align: center;
+        border-bottom: 1px solid #004080;
+      }
+      nav a:last-child {
+        border-bottom: none;
+      }
+      form button {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Scholarship Portal</h1>
+    <p>Your gateway to thousands of scholarship opportunities</p>
+  </header>
+ 
